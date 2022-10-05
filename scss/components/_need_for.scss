@@ -1,0 +1,14 @@
+.need_for {
+    height: 38px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: auto;
+
+    .item {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+}
