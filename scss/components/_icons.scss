@@ -1,0 +1,28 @@
+.icon {
+    &__silver {
+        width: 44px;
+
+        display: inline-block;
+
+        text-align: center;
+        padding: 0 10px;
+        color: g.$c_blue;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 1.15;
+
+        border-radius: 6px;
+        background-color: g.$c_white;
+    }
+
+    &__small_arrow {
+        &::after {
+            content: "";
+            border: 5px solid transparent;
+            border-left-color: #fff;
+            display: inline-block;
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+    }
+}

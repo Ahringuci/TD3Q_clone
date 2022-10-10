@@ -1,11 +1,13 @@
-.need_for {
-    height: 38px;
+.raw_materials {
+    text-align: center;
 
+    color: g.$c_white;
+}
+
+.materials {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    margin-top: auto;
 
     .item {
         margin-left: 6px;

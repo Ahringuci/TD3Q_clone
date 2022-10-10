@@ -1,0 +1,24 @@
+.bottom_lists {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+
+    .others {
+        position: relative;
+
+        &::after {
+            content: 'chiến lệnh 33';
+            position: absolute;
+            width: 100px;
+            top: -18px;
+            left: -20px;
+            color: #fff;
+        }
+    }
+
+    button {
+        margin-left: 10px;
+    }
+}

@@ -1,52 +1,59 @@
 /* button */
-.btn {
-    width: 58px;
-    height: 58px;
+.button_nor {
+    width: 50px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 5px;
 
     display: block;
 
-    border-radius: 4px;
-    background-color: #3fc1e8;
+    &.b1 {
+        color: #363301;
+        background-color: #fff41f;
+    }
 
-    color: #fff;
+    &.b2 {
+        color: #012836;
+        background-color: #179ecf;
+    }
 
-    /* btn_upgrade */
-    &_upgrade {
-        width: 200px;
-        height: 40px;
+    &.b3 {
+        color: #822003;
+        background-color: #fc906f;
+    }
 
-        font-size: 20px;
-
-        margin-top: 8px;
-        margin-left: auto;
-        margin-right: auto;
+    &.b4 {
+        color: #535354;
+        background-color: #e3e3e3;
     }
 }
 
 .buttons_wrap {
     &_flex {
         display: flex;
-        padding-left: 20px;
-        padding-right: 20px;
-
 
         .button {
-            width: calc(20% - 4px);
-            height: 40px;
+            width: 90px;
+            height: 34px;
 
-            margin-left: 2px;
-            margin-right: 2px;
+            margin-left: 3px;
+            margin-right: 3px;
 
             font-size: 15px;
             font-weight: 700;
-            background-color: #aaa;
+            color: g.$c_bc_dark;
+            background-color: g.$c_bc_light;
 
-            border-top-right-radius: 8px;
-            border-top-left-radius: 8px;
+            border: 2px solid transparent;
+            border-radius: 8px;
+
+            transition: all 300ms ease;
 
             &.actived {
-                color: #fff;
-                background-color: #333;
+                color: g.$c_light;
+                background-color: g.$c_dark;
+                border-color: g.$c_light;
             }
         }
     }

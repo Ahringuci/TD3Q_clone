@@ -1,4 +1,4 @@
-.percent_ticket {
+.talisman {
     &__wrap {
         display: flex;
         flex-wrap: wrap;
@@ -16,17 +16,15 @@
             position: relative;
 
             &::after {
-                content: '+'attr(data-item)'%';
-                position: absolute;
-                z-index: 1;
-                top: 50%;
-                left: 50%;
+                content: attr(data-item);
 
                 font-size: 16px;
                 color: g.$c_blue;
                 font-weight: 500;
                 transform: translate(-50%, -50%);
             }
+
+            span {}
         }
     }
 }

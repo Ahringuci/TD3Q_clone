@@ -1,97 +1,174 @@
 .weapon_enhacement {
-    .enhacement {
+    &_alltab {
+        display: flex;
+
+
+        .tab_default,
+        .tab_alway_on {
+            width: 50%;
+        }
+
+        .tab_default {}
+    }
+
+    .avatar {
+        position: relative;
+
+        display: block;
+        width: 100px;
+        height: 100px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        border-radius: 6px;
+        background-color: #aaa;
+
+        figcaption {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 84px;
+            transform: translate(-50%);
+
+            color: g.$c_white;
+        }
+
+        .enhacement_level {
+            position: absolute;
+            right: 0;
+            bottom: 14px;
+
+            font-size: 14px;
+            color: g.$c_white;
+
+            &::before {
+                content: 'Lv';
+            }
+        }
+    }
+
+    .one_flow {
         width: 100%;
         height: 100%;
 
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
 
-        .block_1,
-        .block_2 {
-            width: calc(50% - 5px);
-            height: 100%;
+        .group {
+            margin-top: auto;
+        }
+    }
 
-            display: flex;
-            flex-direction: column;
-
-            .img {
-                display: block;
-                width: 60px;
-                height: 60px;
-
-                border-radius: 6px;
-                background-color: #aaa;
+    .enhacement {
+        .groups__inline {
+            button {
+                margin-right: 10px;
             }
 
-            .name {
-                text-align: center;
+            &+.groups__inline {
+                margin-top: 10px;
             }
         }
+    }
 
-        .block_1 {
-            .img {
-                margin-left: auto;
-                margin-right: auto;
+    .enhancement_cost,
+    .enhancement_decost {
+        font-weight: 700;
+    }
+
+    .enhacement_items {
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+            width: 54px;
+            height: 54px;
+            margin: 4px;
+
+            cursor: pointer;
+
+            border-radius: 6px;
+
+            text-align: center;
+
+            font-weight: 700;
+            color: g.$c_dark;
+            background-color: #fff;
+
+            position: relative;
+
+            &::after {
+                content: attr(data-rank)" "attr(data-type);
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+
+                transform: translate(-50%, -50%);
             }
         }
-
-        .block_2 {}
     }
 
     .enhacement_rate {
-        margin-top: 20px;
-
-        >.rate {
-            width: 140px;
-            margin-left: auto;
-            margin-right: auto;
-
-            position: relative;
-            z-index: 1;
-
-            text-align: center;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 14px;
-            color: #fff;
-
-            &::after,
-            &::before {
-                content: '';
-                position: absolute;
-                z-index: -1;
-                left: 0;
-
-                border-radius: 99px;
-            }
-
-            &::before {
-                width: 100%;
-                height: 14px;
-                top: 0;
-                background-color: #333;
-            }
-
-            &::after {
-                width: 84%;
-                height: 10px;
-                top: 2px;
-                left: 2px;
-                background-color: #777;
-            }
-
+        .rate {
+            color: g.$c_white;
         }
 
-        >.add_rate {
-            width: 60px;
-            height: 60px;
+        .enhancement_talisman {
+            display: block;
 
-            margin-top: 10px;
             margin-left: auto;
             margin-right: auto;
 
             border-radius: 6px;
-            background-color: #777;
+
+            color: g.$c_white;
+            text-decoration: underline;
+        }
+    }
+
+
+    .upgrade_star {
+        .materials {
+            margin-bottom: 10px;
+
+            button {
+                width: 52px;
+                height: 52px;
+
+                border-radius: 8px;
+
+                background-color: g.$c_bc_light;
+            }
+        }
+    }
+
+    .sacrifice {
+        &__cost {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            >.item {
+                width: 50px;
+                height: 50px;
+                margin: 0px 20px;
+
+                border-radius: 99px;
+
+                text-align: center;
+                padding-top: 16px;
+
+                white-space: nowrap;
+
+                font-size: 15px;
+                font-weight: 700;
+
+                color: g.$c_bc_light;
+                background-color: g.$c_dark;
+            }
         }
     }
 }

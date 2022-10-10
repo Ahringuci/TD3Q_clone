@@ -1,0 +1,11 @@
+.groups {
+    &__inline {
+        display: flex;
+        align-items: center;
+    }
+
+    &__center {
+        display: flex;
+        justify-content: center;
+    }
+}

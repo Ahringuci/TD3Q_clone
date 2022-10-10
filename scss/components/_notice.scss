@@ -27,13 +27,6 @@
     pointer-events: none;
     user-select: none;
 
-    p {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(-75px);
-    }
-
     &_item {
         position: absolute;
         top: 50%;

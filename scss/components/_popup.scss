@@ -14,7 +14,7 @@
     opacity: 0;
     visibility: hidden;
 
-    transition: visibility 400ms ease, opacity 300ms linear 100ms;
+    transition: visibility 300ms ease, opacity 200ms linear 100ms;
 
     &.popup_cover {
         z-index: 1040;
@@ -37,10 +37,10 @@
     }
 
     &_content {
-        width: 640px;
+        width: 720px;
 
         padding: 20px;
-        background-color: #bfbfbf;
+        background-color: g.$c_bc_dark;
 
         border-radius: 8px;
         border: 4px solid g.$c_dark;
@@ -49,18 +49,40 @@
     // popup_heading
     &_heading {
         color: #fff;
-        font-size: 26px;
-
         margin-bottom: 16px;
     }
 
-    &_common {}
+    &_submit {
+        .popup_content {
+            width: 240px;
+            color: #fff;
 
-    // popup_main_building	
-    &_main_building {}
+            .form_submit {
+                width: 100%;
+
+                display: flex;
+                justify-content: space-between;
+
+                margin-top: 10px;
+            }
+        }
+
+        .button_submit {
+            width: calc(50% - 5px);
+            display: block;
+
+            background-color: g.$c_bc_light;
+
+            border: 2px solid g.$c_dark;
+            border-radius: 8px;
+            height: 30px;
+        }
+    }
 }
 
-@import './popup/percent_ticket';
+@import './popup/talisman';
 @import './popup/vip_daily';
 @import './popup/vip_right';
-@import './popup/_weapon_enhancement';
+@import './popup/weapon_enhancement';
+@import './popup/main';
+@import './popup/heroes';

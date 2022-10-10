@@ -1,14 +1,27 @@
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 99px;
+    background-color: g.$c_bc_light;
+}
+
 .app {
-    width: 1200px;
+    width: 1000px;
     height: 640px;
 
     margin: 100px 20px;
 
-    font-size: 16px;
+    font-size: 14.5px;
     line-height: 1.15;
 
     padding: 12px;
 
+    color: g.$c_light;
     border: 2px solid #333;
 
     position: relative;
@@ -18,4 +31,8 @@
     position: relative;
     width: 100%;
     height: 100%;
+}
+
+dl {
+    line-height: 1.6;
 }
