@@ -51,6 +51,7 @@
         let { vip } = VIPState;
         Game.coin = _x;
         VIPState.vip = vip + 1;
+
         UpdateUI();
         Notification(true);
     });

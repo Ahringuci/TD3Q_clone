@@ -1,0 +1,22 @@
+.popup_shop {
+    .container {
+        max-height: 400px;
+        overflow: auto;
+    }
+
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+
+        .button_nor {
+            width: 80px;
+            height: 80px;
+
+            margin: 5px;
+
+            text-align: center;
+
+            position: relative;
+        }
+    }
+}

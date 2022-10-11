@@ -74,6 +74,29 @@ input[type=text] {
 }
 
 /* button */
+.b0::after {
+  content: attr(data-hover);
+  width: 160px;
+  max-width: max-content;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  z-index: 2;
+  opacity: 0;
+  text-align: left;
+  color: #fff;
+  line-height: 1.15;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 150ms ease;
+  pointer-events: none;
+}
+.b0:hover::after {
+  opacity: 1;
+}
+
 .button_nor {
   width: 50px;
   height: 50px;
@@ -904,6 +927,91 @@ input[type=text] {
   font-weight: 700;
   border-radius: 8px;
   background-color: #02ab97;
+}
+
+.popup_shop .container {
+  max-height: 400px;
+  overflow: auto;
+}
+.popup_shop .items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.popup_shop .items .button_nor {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.popup_research .container {
+  display: flex;
+}
+.popup_research .container .l,
+.popup_research .container .r {
+  width: 50%;
+  margin-top: 20px;
+}
+.popup_research .items {
+  width: 220px;
+  height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.popup_research .items .b5 {
+  background-color: #333;
+}
+.popup_research .items div {
+  position: absolute;
+  text-align: center;
+}
+.popup_research .items div:nth-child(1) {
+  top: -35px;
+  left: calc(50% - 35px);
+}
+.popup_research .items div:nth-child(2) {
+  top: 22.5%;
+  left: calc(100% - 35px);
+}
+.popup_research .items div:nth-child(3) {
+  top: calc(100% - 50px);
+  left: 67.5%;
+}
+.popup_research .items div:nth-child(4) {
+  top: calc(100% - 50px);
+  left: 8%;
+}
+.popup_research .items div:nth-child(5) {
+  top: 22.5%;
+  left: -35px;
+}
+.popup_research .items div span {
+  width: 70px;
+  height: 70px;
+  border-radius: 99px;
+  border: 2px solid #eee;
+  line-height: 70px;
+  white-space: nowrap;
+  margin-bottom: 4px;
+}
+.popup_research .r {
+  padding-top: 30px;
+}
+.popup_research .r .stat__inline dt {
+  width: 120px;
+}
+.popup_research .buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 52px;
+}
+.popup_research .buttons button {
+  width: 94px;
+  height: 26px;
+  margin: 5px;
+  text-align: center;
 }
 
 /* stat */
