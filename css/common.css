@@ -74,6 +74,13 @@ input[type=text] {
 }
 
 /* button */
+.b-0 {
+  cursor: default;
+}
+
+.b0 {
+  position: relative;
+}
 .b0::after {
   content: attr(data-hover);
   width: 160px;
@@ -100,10 +107,13 @@ input[type=text] {
 .button_nor {
   width: 50px;
   height: 50px;
+  display: block;
   font-weight: 700;
   font-size: 12px;
   border-radius: 5px;
-  display: block;
+  color: #fff;
+  border: 2px solid #fff;
+  position: relative;
 }
 .button_nor.b1 {
   color: #363301;
@@ -120,6 +130,31 @@ input[type=text] {
 .button_nor.b4 {
   color: #535354;
   background-color: #e3e3e3;
+}
+.button_nor.b5 {
+  background-color: deeppink;
+}
+.button_nor.d {
+  color: #222;
+  background-color: #ccc;
+}
+.button_nor.c {
+  background-color: #189e4b;
+}
+.button_nor.b {
+  background-color: #0c96cc;
+}
+.button_nor.a {
+  background-color: #cc0c3c;
+}
+.button_nor.s {
+  background-color: #fff41f;
+}
+.button_nor.ss {
+  background-color: #d47108;
+}
+.button_nor.sss {
+  background-color: #ff409f;
 }
 
 .buttons_wrap_flex {
@@ -351,10 +386,20 @@ input[type=text] {
   background-color: #666;
   border-radius: 8px;
   border: 4px solid #333;
+  position: relative;
 }
 .popup_heading {
   color: #fff;
   margin-bottom: 16px;
+}
+.popup__resource {
+  display: flex;
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  text-align: right;
+  color: #fff;
+  font-size: 15px;
 }
 .popup_submit .popup_content {
   width: 240px;
@@ -945,6 +990,62 @@ input[type=text] {
   position: relative;
 }
 
+.popup_mystery_shop .button_mystery {
+  width: 100px;
+  height: 26px;
+  margin-left: auto;
+}
+.popup_mystery_shop .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.popup_mystery_shop .container .l,
+.popup_mystery_shop .container .r {
+  width: 50%;
+}
+.popup_mystery_shop .items {
+  width: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.popup_mystery_shop .items span {
+  margin: 5px;
+}
+.popup_mystery_shop .buttons {
+  display: flex;
+  justify-content: center;
+}
+.popup_mystery_shop .buttons button {
+  width: 120px;
+  height: 26px;
+  margin: 5px;
+}
+
+.popup_mystery_sac .popup_content {
+  width: 348px;
+}
+.popup_mystery_sac .items {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.popup_mystery_sac .items button {
+  margin: 5px;
+}
+.popup_mystery_sac .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.popup_mystery_sac .buttons .button_nor {
+  width: calc(50% - 6px);
+  height: 24px;
+}
+
 .popup_research .container {
   display: flex;
 }
@@ -1012,6 +1113,110 @@ input[type=text] {
   height: 26px;
   margin: 5px;
   text-align: center;
+}
+
+.popup_collect_silver .popup_content {
+  width: 400px;
+}
+.popup_collect_silver .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.popup_collect_silver .buttons .l,
+.popup_collect_silver .buttons .r {
+  width: calc(50% - 10px);
+}
+.popup_collect_silver .buttons button {
+  width: 100%;
+  margin: 5px;
+}
+.popup_collect_silver .info {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #555;
+}
+.popup_collect_silver .info_intro span {
+  color: #fff;
+  font-size: 17px;
+}
+
+.popup_nvhn .popup_content {
+  width: 440px;
+}
+.popup_nvhn .process {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+.popup_nvhn .process::before, .popup_nvhn .process::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+}
+.popup_nvhn .process::before {
+  width: 100%;
+  height: 14px;
+  top: 18px;
+  left: 0;
+  background-color: #333;
+}
+.popup_nvhn .process::after {
+  width: 60%;
+  height: 10px;
+  top: 20px;
+  left: 2px;
+  background-color: #ff409f;
+}
+.popup_nvhn .overscroll {
+  max-height: 200px;
+  overflow: auto;
+  margin-top: 40px;
+}
+.popup_nvhn ul li {
+  display: flex;
+  line-height: 1.6;
+}
+.popup_nvhn ul p {
+  width: calc(100% - 60px);
+}
+.popup_nvhn ul span {
+  width: 40px;
+}
+
+.popup_attacker .map_render {
+  margin-top: 40px;
+}
+.popup_attacker dl {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.popup_attacker dt {
+  font-size: 16px;
+}
+.popup_attacker dd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.popup_attacker dd span {
+  width: calc(20% - 5px);
+  margin-top: 5px;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0px 4px;
+  font-size: 13px;
+  background-color: #660234;
+}
+.popup_attacker .overscroll {
+  max-height: 400px;
+  overflow: auto;
+}
+.popup_attacker .overscroll .item {
+  margin-top: 40px;
 }
 
 /* stat */

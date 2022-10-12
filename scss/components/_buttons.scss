@@ -1,5 +1,11 @@
 /* button */
+.b-0 {
+    cursor: default;
+}
+
 .b0 {
+    position: relative;
+
     &::after {
         content: attr(data-hover);
         width: 160px;
@@ -35,13 +41,17 @@
 .button_nor {
     width: 50px;
     height: 50px;
+
+    display: block;
+
     font-weight: 700;
     font-size: 12px;
     border-radius: 5px;
 
-    display: block;
+    color: #fff;
+    border: 2px solid #fff;
 
-
+    position: relative;
 
     &.b1 {
         color: #363301;
@@ -61,6 +71,39 @@
     &.b4 {
         color: #535354;
         background-color: #e3e3e3;
+    }
+
+    &.b5 {
+        background-color: deeppink;
+    }
+
+    &.d {
+        color: #222;
+        background-color: #ccc;
+    }
+
+    &.c {
+        background-color: #189e4b;
+    }
+
+    &.b {
+        background-color: #0c96cc;
+    }
+
+    &.a {
+        background-color: #cc0c3c;
+    }
+
+    &.s {
+        background-color: #fff41f;
+    }
+
+    &.ss {
+        background-color: #d47108;
+    }
+
+    &.sss {
+        background-color: #ff409f;
     }
 }
 
@@ -118,6 +161,4 @@
 
         }
     }
-
-
 }

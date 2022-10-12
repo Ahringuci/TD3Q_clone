@@ -1,0 +1,42 @@
+.popup_attacker {
+    .map_render {
+        margin-top: 40px;
+    }
+
+    dl {
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    dt {
+        font-size: 16px;
+    }
+
+    dd {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        span {
+            width: calc(20% - 5px);
+            margin-top: 5px;
+
+            color: #fff;
+            border-radius: 4px;
+            text-align: center;
+
+            padding: 0px 4px;
+            font-size: 13px;
+            background-color: #660234;
+        }
+    }
+
+    .overscroll {
+        max-height: 400px;
+        overflow: auto;
+
+        .item {
+            margin-top: 40px;
+        }
+    }
+}

@@ -91,7 +91,9 @@
                 _html2 += `<dl class="stat__inline c_white"><dt>Trí Tuệ</dt><dd>+ Công ${ori} ( Phép thuật )</dd></dl>`;
             }
             if (b === 4) {
-                _html2 += `<dl class="stat__inline c_white"><dt>May Mắn</dt><dd>+ Bạo ${ori}</dd></dl>`;
+                _html2 += `<dl class="stat__inline c_white"><dt>May Mắn</dt><dd>+ Bạo ${
+                    ori | 0
+                }%</dd></dl>`;
             }
         });
 

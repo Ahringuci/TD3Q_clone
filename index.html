@@ -35,11 +35,6 @@
 
     <div class="app">
         <div class="screen">
-
-            <!-- ↓↓ data_hover ↓↓ -->
-            <span class="data_hover"></span>
-            <!-- ↑↑ data_hover ↑↑ -->
-
             <!-- ↓↓ popup notice ↓↓ -->
             <div class="notice"></div>
             <!-- ↑↑ popup notice ↑↑ -->
@@ -88,15 +83,16 @@
                     <button class="button_nor b3 open_popup" data-id="#popup_shop">
                         Shop
                     </button>
+                    <button class="button_nor b3 open_popup" data-id="#popup_mystery_shop">
+                        Shop Thần Bí
+                    </button>
+                    <button class="button_nor b3 open_popup" data-id="#popup_mystery_shop">
+                        Shop Thần Tướng
+                    </button>
                     <button class="button_nor b3">
                         BXH
                     </button>
-                    <button class="button_nor b3">
-                        CMC
-                    </button>
-                    <button class="button_nor b3">
-                        ADC
-                    </button>
+
                     <button class="button_nor b3">
                         Vòng Quay
                     </button>
@@ -126,7 +122,7 @@
                 <div class="map_name">Lorem ipsum - 10</div>
 
                 <button class="button_nor b2">Điểm danh</button>
-                <button class="button_nor b2 js_hover" data-hover="nhiem vu hang ngay">nvhn</button>
+                <button class="button_nor b2 open_popup" data-id="#popup_nvhn">nvhn</button>
                 <button class="button_nor b2">Quà Online</button>
                 <button class="button_nor b2">Hoạt động</button>
             </article>
@@ -145,6 +141,9 @@
             <!-- // feature -->
             <article class="bottom_lists">
                 <!-- // main building -->
+                <button class="button_nor b5 open_popup" data-id="#popup_allitem">
+                    All item
+                </button>
                 <button class="button_nor b1 open_popup" data-id="#popup_heroes">
                     Tướng
                 </button>
@@ -156,6 +155,10 @@
                 <button class="button_nor b1 open_popup" data-id="#popup_weapon_enhancement">
                     Cường hóa
                 </button>
+                <button class="button_nor b1 open_popup" data-id="#popup_collect_silver">
+                    Trưng Thu
+                </button>
+
                 <!-- // feature inventory -->
                 <button class="button_nor b1">
                     Túi
@@ -168,7 +171,7 @@
                     Tu Tiên
                 </button>
                 <!-- // map attack -->
-                <button class="button_nor b1 others">
+                <button class="button_nor b1 others open_popup" data-id="#popup_attacker">
                     Chiến<br />đấu
                 </button>
             </article>
@@ -1002,7 +1005,7 @@
 
 
         <!-- ↓↓ research ↓↓ -->
-        <div class="popup popup_research actived" id="popup_research">
+        <div class="popup popup_research" id="popup_research">
             <div class="popup_mask"></div>
             <div class="popup_content">
                 <h2 class="popup_heading">Tu Tiên</h2>
@@ -1016,35 +1019,14 @@
                         </div>
 
                         <div class="buttons">
-                            <button class="button_nor b1">Nâng cấp x1</button>
-                            <button class="button_nor b1 research_x" data-x="10">Nâng cấp x10</button>
-                            <button class="button_nor b1 research_x" data-x="100">Nâng cấp x100</button>
+                            <button class="button_nor b1">Tu Tiên x1</button>
+                            <button class="button_nor b1 research_x" data-x="10">Tu Tiên x10</button>
+                            <button class="button_nor b1 research_x" data-x="100">Tu Tiên x100</button>
                         </div>
                     </div>
                     <div class="r">
 
-                        <div class="items_add">
-                            <dl class="stat__inline c_white">
-                                <dt>Nhanh nhẹn</dt>
-                                <dd>+ Tốc 100</dd>
-                            </dl>
-                            <dl class="stat__inline c_white">
-                                <dt>Sức mạnh</dt>
-                                <dd>+ Công 120 ( Vật lí )</dd>
-                            </dl>
-                            <dl class="stat__inline c_white">
-                                <dt>Dẻo dai</dt>
-                                <dd>+ Sinh lực 120</dd>
-                            </dl>
-                            <dl class="stat__inline c_white">
-                                <dt>Trí Tuệ</dt>
-                                <dd>+ Công 320 ( Phép thuật )</dd>
-                            </dl>
-                            <dl class="stat__inline c_white">
-                                <dt>May Mắn</dt>
-                                <dd>+ Bạo 0.1</dd>
-                            </dl>
-                        </div>
+                        <div class="items_add"></div>
 
                         <p class="mt_30">Note:</p>
                         <ul>
@@ -1058,6 +1040,251 @@
             </div>
         </div>
         <!-- ↑↑ research ↑↑ -->
+
+
+        <!-- ↓↓ mystery shop ↓↓ -->
+        <div class="popup popup_mystery_shop" id="popup_mystery_shop">
+            <div class="popup_mask"></div>
+            <div class="popup_content">
+                <h2 class="popup_heading">Shop Thần bí</h2>
+                <div class="popup__resource">
+                    <span>'icon Thần Tâm' : 2154894960</span>
+                </div>
+                <div class="container">
+                    <div class="fullw">
+                        <button class="button_mystery button_nor b5 open_popup" data-id="#popup_mystery_sac">Thần
+                            tế</button>
+                    </div>
+
+                    <div class="l">
+                        <div class="items">
+                            <span class="button_nor d"></span>
+                            <span class="button_nor c"></span>
+                            <span class="button_nor a"></span>
+
+                            <span class="button_nor s"></span>
+                            <span class="button_nor ss"></span>
+                            <span class="button_nor sss"></span>
+
+                            <span class="button_nor s"></span>
+                            <span class="button_nor d"></span>
+                            <span class="button_nor d"></span>
+                        </div>
+
+                        <p class="mt_30">
+                            Thông tin:
+                            <br />Thẻ Bạc 1k x100
+                        </p>
+
+                        <p class="align_center mt_20">Cần : 'icon Thần Tâm' 100</p>
+                        <div class="buttons">
+                            <button class="button_nor a">Đổi</button>
+                        </div>
+                        <p class="align_center mt_30">Tạo mới : 0 / 40</p>
+                        <div class="buttons">
+                            <button class="button_nor b7">Tạo mới (miễn phí)</button>
+                            <button class="button_nor b4 b0 b-0 research_x" data-hover="VIP4 hoặc Lv40 mở">Tạo mới
+                                x10</button>
+                        </div>
+                    </div>
+                    <div class="r mt_30">
+                        <p class="note mt_30">Note:</p>
+                        <ul>
+                            <li>1. Mỗi ngày sẽ được Làm mới miễn phí 1 lần</li>
+                            <li>2. Tạo mới để tạo mới các vật phẩm</li>
+                            <li>3. Tạo mới x10 tốn 10 Thần Bí Lệnh </li>
+                            <li>4. Tạo mới x10 tăng tỉ lệ vật phẩm hiếm</li>
+                            <li>5. Thần Tế Tướng, Trang bị, Vật phẩm để đổi Thần Tâm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup popup_mystery_sac popup_cover" id="popup_mystery_sac">
+            <div class="popup_mask"></div>
+            <div class="popup_content">
+                <h2 class="popup_heading">Thần Tế</h2>
+
+                <div class="container">
+
+                    <div class="items">
+                        <button class="button_nor b4">Thêm</button>
+                        <button class="button_nor b4">Thêm</button>
+                        <button class="button_nor b4">Thêm</button>
+                        <button class="button_nor b4">Thêm</button>
+                        <button class="button_nor b4">Thêm</button>
+
+                        <button class="button_nor b4">Thêm</button>
+                        <button class="button_nor b4">Thêm</button>
+                        <button class="button_nor b4">Thêm</button>
+                        <button class="button_nor b4">Thêm</button>
+                        <button class="button_nor b4">Thêm</button>
+
+                    </div>
+
+                    <div class="buttons">
+                        <button class="button_nor b4 b0 b-0" data-hover="VIP 4 hoặc Lv40 mở">Thêm nhanh</button>
+                        <button class="button_nor b1">Tế</button>
+                    </div>
+                    <p class="note mt_30">Note:</p>
+                    <ul>
+                        <li>1. Trang bị 0*, Tướng 0* mới có thể thần Tế</li>
+                        <li>2. VIP 4 hoặc Lv40 mở thêm nhanh</li>
+                        <li>3. Mỗi Trang bị, Tướng, Vật Phẩm có tỉ lệ ra Thần Tâm khác nhau</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ↑↑ mystery shop ↑↑ -->
+
+
+        <!-- ↓↓ collect silver ↓↓ -->
+        <div class="popup popup_collect_silver" id="popup_collect_silver">
+            <div class="popup_mask"></div>
+            <div class="popup_content">
+                <h2 class="popup_heading">Trưng Thu</h2>
+
+                <div class="container">
+
+                    <div class="buttons">
+                        <div class="l">
+                            <p class="align_center">Trưng thu : 0 / 10</p>
+                            <button class="button_nor b collect">Trưng Thu</button>
+                        </div>
+                        <div class="r">
+                            <p class="align_center">Bạo thu : 0 / 10</p>
+                            <button class="button_nor b-0 b0 collectx10" data-hover="VIP2 mở hoặc Lv20">Bạo Thu</button>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <p class="info_intro align_center">
+                            <span>Trưng thu sẽ nhận: 1248685 bạc</span>
+                            <br />
+                            (Bạc tăng theo cấp người chơi)
+                        </p>
+
+                        <ul class="info_note mt_20">
+                            <li>0. Vip2 hoặc Lv20 mở Bạo Thu</li>
+                            <li>1. Bạo Thu có tỉ lệ x2 số bạc được nhận</li>
+                            <li>2. Bạo Thu giới hạn tăng theo VIP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ↑↑ collect silver ↑↑ -->
+
+        <!-- ↓↓ attacker ↓↓ -->
+        <div class="popup popup_attacker actived" id="popup_attacker">
+            <div class="popup_mask"></div>
+            <div class="popup_content">
+                <h2 class="popup_heading">Bản đồ</h2>
+
+                <div class="container">
+                    <p>
+                        Công thức: base + thứ tự * el
+                    </p>
+                    <div class="overscroll mt_20">
+                        <div class="items">
+                            <div class="item">
+                                <p>Stage 1</p>
+                                <dl>
+                                    <dt>Map1</dt>
+                                    <dd>
+                                        <span>bạc 240, exp 100</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ↑↑ attacker ↑↑ -->
+
+
+        <!-- ↓↓ NVHN ↓↓ -->
+        <div class="popup popup_nvhn" id="popup_nvhn">
+            <div class="popup_mask"></div>
+            <div class="popup_content">
+                <h2 class="popup_heading">Nhiệm vụ hàng ngày</h2>
+
+                <div class="container">
+                    <div class="process">
+                        <p>0</p>
+                        <p class="b0" data-hover="Quà Tư Thục 1">20</p>
+                        <p class="b0" data-hover="Quà Tư Thục 2">40</p>
+                        <p class="b0" data-hover="Quà Tư Thục 3">60</p>
+                        <p class="b0" data-hover="Quà Tư Thục 4">80</p>
+                        <p class="b0" data-hover="Quà Tư Thục 5">100</p>
+                    </div>
+
+                    <div class="overscroll">
+                        <ul>
+                            <li>
+                                <span>+5</span>
+                                <p>Báo danh</p>
+                                <span>0/1</span>
+                            </li>
+                            <li>
+                                <span>+5</span>
+                                <p>Nhận quà Online</p>
+                                <span>0/3</span>
+                            </li>
+                            <li>
+                                <span>+5</span>
+                                <p>Trưng Thu</p>
+                                <span>0/10</span>
+                            </li>
+                            <li>
+                                <span>+5</span>
+                                <p>Bạo Thu</p>
+                                <span>0/10</span>
+                            </li>
+                            <li>
+                                <span>+5</span>
+                                <p>Mua đồ ở Shop Thần Bí</p>
+                                <span>0/2</span>
+                            </li>
+                            <li>
+                                <span>+5</span>
+                                <p>Mua đồ ở Shop Thần Tướng</p>
+                                <span>0/2</span>
+                            </li>
+                            <li>
+                                <span>+5</span>
+                                <p>Cường hóa trang bị</p>
+                                <span>0/5</span>
+                            </li>
+                            <li>
+                                <span>+5</span>
+                                <p>Dùng Bùa Cấp Tốc</p>
+                                <span>0/5</span>
+                            </li>
+                            <li>
+                                <span>+5</span>
+                                <p>Like BXH</p>
+                                <span>0/3</span>
+                            </li>
+                            <li>
+                                <span>+5</span>
+                                <p>Tu Tiên</p>
+                                <span>0/5</span>
+                            </li>
+                            <li>
+                                <span>+5</span>
+                                <p>Chiến đấu</p>
+                                <span>0/10</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ↑↑ NVHN ↑↑ -->
     </div>
 
     <!-- #region: jQuery-->
@@ -1066,6 +1293,7 @@
     <!-- api -->
     <script src="./assets/js/api/items.js"></script>
     <script src="./assets/js/api/weapon.js"></script>
+    <script src="./assets/js/api/map.js"></script>
     <script src="./assets/js/api/vip.js"></script>
     <!-- api end -->
     <!-- base -->
@@ -1073,7 +1301,9 @@
 
     <!-- render -->
     <script src="./assets/js/render/shop.js"></script>
+    <script src="./assets/js/render/map.js"></script>
     <script src="./assets/js/common.js"></script>
+
     <!-- component -->
     <script src="./assets/js/components/exp.js"></script>
     <script src="./assets/js/components/popup.js"></script>
@@ -1081,13 +1311,13 @@
 
     <!-- <script src="./assets/js/chatbox.js"></script>
     <script src="./assets/js/tab.js"></script>
-    <script src="./assets/js/vip.js"></script>
     <script src="./assets/js/talisman.js"></script>
     <script src="./assets/js/enhancement.js"></script> -->
 
     <!-- features -->
-    <!-- <script src="./assets/js/features/main.js"></script>
-    <script src="./assets/js/features/left_side.js"></script> -->
+    <script src="./assets/js/features/trung_thu.js"></script>
+    <script src="./assets/js/features/vip.js"></script>
+    <script src="./assets/js/features/left_side.js"></script>
 
 </body>
 

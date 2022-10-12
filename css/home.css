@@ -42,6 +42,15 @@ dl {
   margin-top: 30px !important;
 }
 
+p.note {
+  font-size: 20px;
+  color: pink;
+}
+
+.fullw {
+  width: 100%;
+}
+
 .bottom_lists {
   position: absolute;
   bottom: 0;

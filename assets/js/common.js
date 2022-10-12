@@ -2,6 +2,31 @@ const Game = {
     coin: 10000,
     coin_in_game: 0,
     silver: 1000,
+
+    // vip
+    vip: {
+        map_bonus: [
+            0, 0, 0, 5, 10, 15, 20, 25, 30, 40, 50, 80, 100, 110, 130, 150,
+        ],
+        collect_bonus: [
+            0, 0, 0, 5, 10, 15, 20, 25, 30, 40, 50, 80, 100, 110, 130, 150,
+        ],
+    },
+
+    // player
+    player: {
+        origin: 50,
+        visible: 50,
+        level: 1,
+        el: 0.8,
+        el_origin: 0.8,
+    },
+
+    //collect_silver
+    collect_silver: {
+        origin: 160,
+        bonus: [0, 0, 0, 0, 0, 5, 10, 15, 20, 30, 40, 55, 70, 90, 120, 150],
+    },
 };
 
 const Submit = () => {
@@ -54,28 +79,3 @@ const WeaponsItem = [
         },
     },
 ];
-
-const DataHover = () => {
-    const _ = $(".js_hover"),
-        __ = $(".data_hover");
-
-    _.on("mouseenter", function () {
-        let _pos = $(this).offset(),
-            _x = _pos.left,
-            _y = _pos.top,
-            _w = $(this).innerWidth(),
-            _txt = $(this).attr("data-hover");
-
-        __.text(_txt);
-        __.css({
-            opacity: "1",
-            top: `${_y}px`,
-            left: `${_x + _w * 0.5}px`,
-        });
-    }).on("mouseleave", function () {
-        __.css({
-            opacity: "0",
-        });
-    });
-};
-DataHover();
