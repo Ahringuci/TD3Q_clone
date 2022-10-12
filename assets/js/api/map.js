@@ -27,7 +27,7 @@ const MAP = [
         el_el: 5,
         exp: 1000,
         exp_el: 100,
-        silver: 1500,
+        silver: 1000,
         silver_el: 100,
 
         maps: [
